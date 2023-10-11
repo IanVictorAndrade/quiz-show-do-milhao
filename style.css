@@ -77,3 +77,8 @@ button {
   background-color: #214cee;
   border-radius: 10px;
 }
+
+.reiniciar:hover {
+  background-color: green;
+  border-radius: 10px;
+}
