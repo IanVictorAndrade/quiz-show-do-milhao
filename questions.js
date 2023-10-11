@@ -1,86 +1,83 @@
 export default [
-    {
-        question: "Qual é a principal fonte de poluição do ar nas áreas urbanas?",
-        answers: [
-            {option: "a) Emissões de vulcões", correct: false},
-            {option: "b) Emissões de veículos automotores", correct: true},
-            {option: "c) Emissões de usinas nucleares", correct: false},
-        ],
-    },
-    {
-        question: "O que é um ecossistema?",
-        answers: [
-            {option: "a) Um grupo de edifícios em uma cidade", correct: false},
-            {option: "b) Uma comunidade de seres humanos", correct: false},
-            {option: "c) Uma comunidade de seres vivos e o ambiente em que vivem", correct: true},
-        ],
-    },
-    {
-        question: "Qual é o principal objetivo do Protocolo de Quioto?",
-        answers: [
-            {option: "a) Aumentar as emissões de gases de efeito estufa", correct: false},
-            {option: "b) Reduzir as emissões de gases de efeito estufa", correct: true},
-            {option: "c) Promover o desmatamento", correct: false},
-        ],
-    },
-    {
-        question: "O que é a camada de ozônio?",
-        answers: [
-            {option: "a) Uma camada de gás metano na atmosfera", correct: false},
-            {
-                option: "b) Uma camada de ozônio na estratosfera que protege a Terra dos raios ultravioleta prejudiciais do sol",
-                correct: true
-            },
-            {option: "c) Uma camada de gelo na Antártica", correct: false},
-        ],
-    }, {
-        question: "Qual das seguintes ações contribui para a conservação dos oceanos?",
-        answers: [
-            {option: "a) Pesca excessiva", correct: false},
-            {option: "b) Descarte de plástico no oceano", correct: false},
-            {option: "c) Criação de áreas marinhas protegidas", correct: true},
-        ],
-    },
-    {
-        question: "O que é a chuva ácida?",
-        answers: [
-            {option: "a) Uma forma de purificação da água da chuva", correct: false},
-            {option: "b) A precipitação de ácido sulfúrico e óxidos de nitrogênio na atmosfera", correct: true},
-            {option: "c) Uma forma de chuva que contém vitaminas", correct: false},
-        ],
-    },
-    {
-        question: "Qual dos seguintes não é um exemplo de recurso natural renovável?",
-        answers: [
-            {option: "a) Água doce", correct: false},
-            {option: "b) Petróleo", correct: true},
-            {option: "c) Energia solar", correct: false},
-        ],
-    },
-    {
-        question: "O que é a biodiversidade?",
-        answers: [
-            {option: "a) A quantidade de água doce disponível na Terra", correct: false},
-            {option: "b) A variedade de vida na Terra, incluindo plantas, animais e microorganismos", correct: true},
-            {option: "c) A temperatura média do planeta", correct: false},
-        ],
-    },
-    {
-        question: "Qual das seguintes atividades humanas é uma das principais causas do desmatamento?",
-        answers: [
-            {option: "a) Reciclagem de papel", correct: false},
-            {option: "b) Agricultura sustentável", correct: false},
-            {option: "c) Corte ilegal de árvores", correct: true},
-        ],
-    },
-    {
-        question: "Qual dos seguintes gases é considerado um dos principais responsáveis pelo aquecimento global?",
-        answers: [
-            {option: "a) Oxigênio", correct: false},
-            {option: "b) Dióxido de carbono (CO2)", correct: true},
-            {option: "c) Nitrogênio", correct: false},
-        ],
-    },
+  {
+    question: "Qual é a principal fonte de poluição do ar nas áreas urbanas?",
+    answers: [
+      { option: "a) Emissões de vulcões", correct: true },
+      { option: "b) Emissões de veículos automotores", correct: false },
+      { option: "c) Emissões de usinas nucleares", correct: false },
+    ],
+  },
+  {
+    question: "O que é um ecossistema?",
+    answers: [
+      { option: "a) Um grupo de edifícios em uma cidade", correct: false },
+      { option: "b) Uma comunidade de seres humanos", correct: true },
+      { option: "c) Uma comunidade de seres vivos e o ambiente em que vivem", correct: false },
+    ],
+  },
+  {
+    question: "Qual é o principal objetivo do Protocolo de Quioto?",
+    answers: [
+      { option: "a) Aumentar as emissões de gases de efeito estufa", correct: false },
+      { option: "b) Reduzir as emissões de gases de efeito estufa", correct: false },
+      { option: "c) Promover o desmatamento", correct: true },
+    ],
+  },
+  {
+    question: "O que é a camada de ozônio?",
+    answers: [
+      { option: "a) Uma camada de gás metano na atmosfera", correct: false },
+      { option: "b) Uma camada de ozônio na estratosfera que protege a Terra dos raios ultravioleta prejudiciais do sol", correct: false },
+      { option: "c) Uma camada de gelo na Antártica", correct: true },
+    ],
+  },  {
+    question: "Qual das seguintes ações contribui para a conservação dos oceanos?",
+    answers: [
+      { option: "a) Pesca excessiva", correct: false },
+      { option: "b) Descarte de plástico no oceano", correct: false },
+      { option: "c) Criação de áreas marinhas protegidas", correct: true },
+    ],
+  },
+  {
+    question: "O que é a chuva ácida?",
+    answers: [
+      { option: "a) Uma forma de purificação da água da chuva", correct: false },
+      { option: "b) A precipitação de ácido sulfúrico e óxidos de nitrogênio na atmosfera", correct: false },
+      { option: "c) Uma forma de chuva que contém vitaminas", correct: true },
+    ],
+  },
+  {
+    question: "Qual dos seguintes não é um exemplo de recurso natural renovável?",
+    answers: [
+      { option: "a) Água doce", correct: false },
+      { option: "b) Petróleo", correct: false },
+      { option: "c) Energia solar", correct: true },
+    ],
+  },  
+  {
+    question: "O que é a biodiversidade?",
+    answers: [
+      { option: "a) A quantidade de água doce disponível na Terra", correct: false },
+      { option: "b) A variedade de vida na Terra, incluindo plantas, animais e microorganismos", correct: false },
+      { option: "c) A temperatura média do planeta", correct: true },
+    ],
+  },
+  {
+    question: "Qual das seguintes atividades humanas é uma das principais causas do desmatamento?",
+    answers: [
+      { option: "a) Reciclagem de papel", correct: false },
+      { option: "b) Agricultura sustentável", correct: false },
+      { option: "c) Corte ilegal de árvores", correct: true },
+    ],
+  },
+  {
+    question: "Qual dos seguintes gases é considerado um dos principais responsáveis pelo aquecimento global?",
+    answers: [
+      { option: "a) Oxigênio", correct: false },
+      { option: "b) Dióxido de carbono (CO2)", correct: true },
+      { option: "c) Nitrogênio", correct: false },
+    ],
+  },
 ];
 
 /*
