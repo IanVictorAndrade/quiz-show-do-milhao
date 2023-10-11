@@ -2,8 +2,8 @@ export default [
   {
     question: "Qual é a principal fonte de poluição do ar nas áreas urbanas?",
     answers: [
-      { option: "a) Emissões de vulcões", correct: true },
-      { option: "b) Emissões de veículos automotores", correct: false },
+      { option: "a) Emissões de vulcões", correct: false },
+      { option: "b) Emissões de veículos automotores", correct: true },
       { option: "c) Emissões de usinas nucleares", correct: false },
     ],
   },
@@ -11,24 +11,24 @@ export default [
     question: "O que é um ecossistema?",
     answers: [
       { option: "a) Um grupo de edifícios em uma cidade", correct: false },
-      { option: "b) Uma comunidade de seres humanos", correct: true },
-      { option: "c) Uma comunidade de seres vivos e o ambiente em que vivem", correct: false },
+      { option: "b) Uma comunidade de seres humanos", correct: false },
+      { option: "c) Uma comunidade de seres vivos e o ambiente em que vivem", correct: true },
     ],
   },
   {
     question: "Qual é o principal objetivo do Protocolo de Quioto?",
     answers: [
       { option: "a) Aumentar as emissões de gases de efeito estufa", correct: false },
-      { option: "b) Reduzir as emissões de gases de efeito estufa", correct: false },
-      { option: "c) Promover o desmatamento", correct: true },
+      { option: "b) Reduzir as emissões de gases de efeito estufa", correct: true },
+      { option: "c) Promover o desmatamento", correct: false },
     ],
   },
   {
     question: "O que é a camada de ozônio?",
     answers: [
       { option: "a) Uma camada de gás metano na atmosfera", correct: false },
-      { option: "b) Uma camada de ozônio na estratosfera que protege a Terra dos raios ultravioleta prejudiciais do sol", correct: false },
-      { option: "c) Uma camada de gelo na Antártica", correct: true },
+      { option: "b) Uma camada de ozônio na estratosfera que protege a Terra dos raios ultravioleta prejudiciais do sol", correct: true },
+      { option: "c) Uma camada de gelo na Antártica", correct: false },
     ],
   },  {
     question: "Qual das seguintes ações contribui para a conservação dos oceanos?",
@@ -42,24 +42,24 @@ export default [
     question: "O que é a chuva ácida?",
     answers: [
       { option: "a) Uma forma de purificação da água da chuva", correct: false },
-      { option: "b) A precipitação de ácido sulfúrico e óxidos de nitrogênio na atmosfera", correct: false },
-      { option: "c) Uma forma de chuva que contém vitaminas", correct: true },
+      { option: "b) A precipitação de ácido sulfúrico e óxidos de nitrogênio na atmosfera", correct: true },
+      { option: "c) Uma forma de chuva que contém vitaminas", correct: false },
     ],
   },
   {
     question: "Qual dos seguintes não é um exemplo de recurso natural renovável?",
     answers: [
       { option: "a) Água doce", correct: false },
-      { option: "b) Petróleo", correct: false },
-      { option: "c) Energia solar", correct: true },
+      { option: "b) Petróleo", correct: true },
+      { option: "c) Energia solar", correct: false },
     ],
   },  
   {
     question: "O que é a biodiversidade?",
     answers: [
       { option: "a) A quantidade de água doce disponível na Terra", correct: false },
-      { option: "b) A variedade de vida na Terra, incluindo plantas, animais e microorganismos", correct: false },
-      { option: "c) A temperatura média do planeta", correct: true },
+      { option: "b) A variedade de vida na Terra, incluindo plantas, animais e microorganismos", correct: true },
+      { option: "c) A temperatura média do planeta", correct: false },
     ],
   },
   {
