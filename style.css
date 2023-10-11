@@ -28,7 +28,7 @@ main {
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
   min-height: 200px;
   display: flex;
   align-items: center;
@@ -71,4 +71,9 @@ button {
 
 .finish button {
   text-align: center;
+}
+
+.answers :hover {
+  background-color: #214cee;
+  border-radius: 10px;
 }
