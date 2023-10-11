@@ -14,7 +14,9 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: linear-gradient(90deg, rgba(91,30,159,1) 0%, rgba(77,39,182,1) 100%);
+  background: linear-gradient(90deg, rgb(0, 114, 15) 0%, rgb(0, 168, 90) 100%);
+  background-image: url("./pexels-zhang-kaiyv-1083515.jpg");
+  background-size: contain;
 }
 
 body h2 {
