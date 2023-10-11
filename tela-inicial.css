@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-image: url("./pexels-zhang-kaiyv-1083515.jpg");
+    background-size: contain;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
