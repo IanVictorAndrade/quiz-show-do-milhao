@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a5a7edbb-bdb6-46a5-a3db-10d1a04aac64" name="Changes" comment="mudanças">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tela-inicial.css" beforeDir="false" afterPath="$PROJECT_DIR$/tela-inicial.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tela-inicial.html" beforeDir="false" afterPath="$PROJECT_DIR$/tela-inicial.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697065878186</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mudanças">
+      <option name="closed" value="true" />
+      <created>1697066788693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697066788693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
