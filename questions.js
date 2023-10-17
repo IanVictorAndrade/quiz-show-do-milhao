@@ -1,81 +1,91 @@
 export default [
   {
-    question: "Qual é a principal fonte de poluição do ar nas áreas urbanas?",
+    question: "Qual é o termo para a liberação de substâncias químicas prejudiciais no ambiente, muitas vezes resultante de atividades industriais?",
     answers: [
-      { option: "a) Emissões de vulcões", correct: false },
-      { option: "b) Emissões de veículos automotores", correct: true },
-      { option: "c) Emissões de usinas nucleares", correct: false },
+      { option: "a) Polinização", correct: false },
+      { option: "b) Eutrofização", correct: false },
+      { option: "c) Poluição", correct: true },
+      { option: "d) Infiltração", correct: false },
     ],
   },
   {
-    question: "O que é um ecossistema?",
-    answers: [
-      { option: "a) Um grupo de edifícios em uma cidade", correct: false },
-      { option: "b) Uma comunidade de seres humanos", correct: false },
-      { option: "c) Uma comunidade de seres vivos e o ambiente em que vivem", correct: true },
-    ],
-  },
-  {
-    question: "Qual é o principal objetivo do Protocolo de Quioto?",
-    answers: [
-      { option: "a) Aumentar as emissões de gases de efeito estufa", correct: false },
-      { option: "b) Reduzir as emissões de gases de efeito estufa", correct: true },
-      { option: "c) Promover o desmatamento", correct: false },
-    ],
-  },
-  {
-    question: "O que é a camada de ozônio?",
-    answers: [
-      { option: "a) Uma camada de gás metano na atmosfera", correct: false },
-      { option: "b) Uma camada de ozônio na estratosfera que protege a Terra dos raios ultravioleta prejudiciais do sol", correct: true },
-      { option: "c) Uma camada de gelo na Antártica", correct: false },
-    ],
-  },  {
-    question: "Qual das seguintes ações contribui para a conservação dos oceanos?",
+    question: "Qual é a principal causa da destruição do recife de coral em todo o mundo?",
     answers: [
       { option: "a) Pesca excessiva", correct: false },
-      { option: "b) Descarte de plástico no oceano", correct: false },
-      { option: "c) Criação de áreas marinhas protegidas", correct: true },
+      { option: "b) Aquecimento global e acidificação dos oceanos", correct: true },
+      { option: "c) Poluição do ar", correct: false },
+      { option: "d) Urbanização costeira", correct: false },
     ],
   },
   {
-    question: "O que é a chuva ácida?",
+    question: "O que é a desertificação?",
     answers: [
-      { option: "a) Uma forma de purificação da água da chuva", correct: false },
-      { option: "b) A precipitação de ácido sulfúrico e óxidos de nitrogênio na atmosfera", correct: true },
-      { option: "c) Uma forma de chuva que contém vitaminas", correct: false },
+      { option: "a) A expansão das áreas desertas devido ao aumento da precipitação", correct: false },
+      { option: "b) A conversão de desertos em áreas verdes através de projetos de reflorestamento", correct: false },
+      { option: "c) A degradação da terra em áreas áridas e semiáridas devido a atividades humanas e variações climáticas", correct: true },
+      { option: "d) A formação de oásis em regiões secas", correct: false },
     ],
   },
   {
-    question: "Qual dos seguintes não é um exemplo de recurso natural renovável?",
+    question: "Qual dos seguintes gases é um importante contribuinte para a inversão térmica nas áreas urbanas?",
     answers: [
-      { option: "a) Água doce", correct: false },
-      { option: "b) Petróleo", correct: true },
-      { option: "c) Energia solar", correct: false },
+      { option: "a) Dióxido de carbono (CO2)", correct: false },
+      { option: "b) Dióxido de enxofre (SO2)", correct: false },
+      { option: "c) Ozônio (O3)", correct: false },
+      { option: "d) Monóxido de carbono (CO)", correct: true },
+    ],
+  },  {
+    question: "Qual é o termo para a perda de espécies de plantas e animais devido a mudanças no uso da terra e na degradação do habitat?",
+    answers: [
+      { option: "a) Polinização", correct: false },
+      { option: "b) Extinção", correct: true },
+      { option: "c) Eutrofização", correct: false },
+      { option: "d) Desertificação", correct: false },
+    ],
+  },
+  {
+    question: "Qual é o nome da abordagem que visa reduzir o consumo e o desperdício de recursos através do aumento da eficiência na produção e no consumo?",
+    answers: [
+      { option: "a) Economia de mercado", correct: false },
+      { option: "b) Economia circular", correct: true },
+      { option: "c) Economia sustentável", correct: false },
+      { option: "d) Economia de escala", correct: false },
+    ],
+  },
+  {
+    question: "O que é a 'pegada de carbono' de um indivíduo?",
+    answers: [
+      { option: "a) A marca que uma pessoa deixa no solo quando caminha", correct: false },
+      { option: "b) A quantidade de carbono que uma pessoa emite ao respirar", correct: false },
+      { option: "c) A quantidade total de dióxido de carbono que uma pessoa emite ao longo da vida", correct: false },
+      { option: "d) A quantidade total de emissões de carbono associadas ao estilo de vida de uma pessoa", correct: true },
     ],
   },  
   {
-    question: "O que é a biodiversidade?",
+    question: "Qual é o processo de conversão de resíduos orgânicos em gás metano, que pode ser usado como fonte de energia?",
     answers: [
-      { option: "a) A quantidade de água doce disponível na Terra", correct: false },
-      { option: "b) A variedade de vida na Terra, incluindo plantas, animais e microorganismos", correct: true },
-      { option: "c) A temperatura média do planeta", correct: false },
+      { option: "a) Incineração", correct: false },
+      { option: "b) Reciclagem", correct: false },
+      { option: "c) Digestão anaeróbica", correct: true },
+      { option: "d) Compostagem", correct: false },
     ],
   },
   {
-    question: "Qual das seguintes atividades humanas é uma das principais causas do desmatamento?",
+    question: "O que é a superexploração pesqueira?",
     answers: [
-      { option: "a) Reciclagem de papel", correct: false },
-      { option: "b) Agricultura sustentável", correct: false },
-      { option: "c) Corte ilegal de árvores", correct: true },
+      { option: "a) Um tipo de pesca esportiva em alto mar", correct: false },
+      { option: "b) A pesca de espécies exóticas", correct: false },
+      { option: "c) A pesca excessiva que esgota as populações de peixes e ameaça a sustentabilidade dos ecossistemas marinhos", correct: true },
+      { option: "d) A pesca em áreas protegidas", correct: false },
     ],
   },
   {
-    question: "Qual dos seguintes gases é considerado um dos principais responsáveis pelo aquecimento global?",
+    question: "Qual é o nome da camada de água doce abaixo da superfície da terra que armazena água que pode ser acessada por poços?",
     answers: [
-      { option: "a) Oxigênio", correct: false },
-      { option: "b) Dióxido de carbono (CO2)", correct: true },
-      { option: "c) Nitrogênio", correct: false },
+      { option: "a) Aquífero", correct: true },
+      { option: "b) Lago subterrâneo", correct: false },
+      { option: "c) Reservatório subterrâneo", correct: false },
+      { option: "d) Fonte subterrânea", correct: false },
     ],
   },
 ];

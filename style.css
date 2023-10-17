@@ -74,7 +74,7 @@ button {
 
 .answers :hover {
   background-color: #214cee;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .reiniciar:hover {
