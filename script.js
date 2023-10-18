@@ -7,14 +7,14 @@ const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
-const btnEnviar = document.querySelector(".botao-enviar");
 
 import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect = 0;
-var TempoLimite = new Date().getTime() + (90*1000);
+var TempoLimite;
 var TempoRestante;
+var timer;
 
 // Instancia a função que atualiza o timer
 var contagem = () => {
@@ -32,7 +32,11 @@ var contagem = () => {
 
 // Inicia a contagem com um intervalo de 1000 milisegundos entre
 // cada atualização do campo
-var timer = setInterval(contagem, 1000);
+
+var setIntervalo = () => {
+  TempoLimite = new Date().getTime() + (90*1000);
+  timer = setInterval(contagem, 1000);
+}
 
 btnRestart.onclick = () => {
   content.style.display = "flex";
@@ -54,48 +58,32 @@ function nextQuestion(e) {
     selectedAnswer.style.backgroundColor = "red"; // Altera a cor de fundo para opção incorreta
   }
 
-  // Desative os botões de resposta para evitar cliques adicionais
-  document.querySelectorAll(".answer").forEach((item) => {
-    item.removeEventListener("click", nextQuestion);
-  });
-
-  if (currentIndex < questions.length - 1) {
+  if (currentIndex < questions.length - 1 && e.target.getAttribute("data-correct") === "true") {
     currentIndex++;
-    setTimeout(loadQuestion, 1000); // Carregue a próxima pergunta após um atraso de 1 segundo
+    loadQuestion();
+  } else if (e.target.getAttribute("data-correct") === "false") {
+    setIntervalo();
   } else {
     finish();
   }
 }
 
-// function nextQuestion(e) {
-//   if (e.target.getAttribute("data-correct") === "true") {
-//     questionsCorrect++;
-//   }
+// dicaButton.addEventListener("click", () => {
+//   const answerButtons = document.querySelectorAll(".answer");
+//   const wrongAnswers = Array.from(answerButtons).filter(
+//       (button) => button.getAttribute("data-correct") !== "true"
+//   );
 
-//   if (currentIndex < questions.length - 1) {
-//     currentIndex++;
-//     loadQuestion();
+//   if (wrongAnswers.length >= 2) {
+//     // Remove as duas primeiras alternativas erradas
+//     for (let i = 0; i < 2; i++) {
+//       wrongAnswers[i].remove();
+//     }
 //   } else {
-//     finish();
+//     // Caso haja menos de duas alternativas erradas, você pode mostrar uma mensagem ou tomar outra ação.
+//     console.log("Não há duas alternativas erradas para remover.");
 //   }
-// }
-
-dicaButton.addEventListener("click", () => {
-  const answerButtons = document.querySelectorAll(".answer");
-  const wrongAnswers = Array.from(answerButtons).filter(
-      (button) => button.getAttribute("data-correct") !== "true"
-  );
-
-  if (wrongAnswers.length >= 2) {
-    // Remove as duas primeiras alternativas erradas
-    for (let i = 0; i < 2; i++) {
-      wrongAnswers[i].remove();
-    }
-  } else {
-    // Caso haja menos de duas alternativas erradas, você pode mostrar uma mensagem ou tomar outra ação.
-    console.log("Não há duas alternativas erradas para remover.");
-  }
-});
+// });
 
 function finish() {
   textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
@@ -117,7 +105,7 @@ function loadQuestion() {
       ${answer.option}
     </button>
     `;
-
+    setIntervalo();
     answers.appendChild(div);
   });
 
