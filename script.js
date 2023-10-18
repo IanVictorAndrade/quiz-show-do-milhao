@@ -13,7 +13,7 @@ import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect = 0;
-var TempoLimite = new Date().getTime() + (5*1000);
+var TempoLimite = new Date().getTime() + (90*1000);
 var TempoRestante;
 
 // Instancia a função que atualiza o timer
