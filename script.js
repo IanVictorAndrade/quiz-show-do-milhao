@@ -15,7 +15,7 @@ let currentIndex = 0;
 let questionsCorrect = 0;
 var TempoLimite = new Date();
 
-TempoLimite.setMinutes(TempoLimite.getMinutes() + 3, TempoLimite.getSeconds(), TempoLimite.getMilliseconds());
+TempoLimite.setTime(TempoLimite.getTime() + (120*1000))
 
 // Instancia a função que atualiza o timer
 var timer = () => {
