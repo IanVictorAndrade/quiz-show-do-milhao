@@ -94,3 +94,13 @@ button {
   background-color: green;
   border-radius: 10px;
 }
+
+/* Defina a cor de fundo para as opções corretas */
+.answer[data-correct="true"]::after {
+  background-color: green; /* Cor de fundo para opção correta */
+}
+
+/* Defina a cor de fundo para as opções erradas */
+.answer[data-correct="false"]::after {
+  background-color: red; /* Cor de fundo para opção incorreta */
+}

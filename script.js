@@ -43,18 +43,42 @@ btnRestart.onclick = () => {
   loadQuestion();
 };
 
+
 function nextQuestion(e) {
-  if (e.target.getAttribute("data-correct") === "true") {
+  const selectedAnswer = e.target;
+
+  if (selectedAnswer.getAttribute("data-correct") === "true") {
     questionsCorrect++;
+    selectedAnswer.style.backgroundColor = "green"; // Altera a cor de fundo para opção correta
+  } else {
+    selectedAnswer.style.backgroundColor = "red"; // Altera a cor de fundo para opção incorreta
   }
+
+  // Desative os botões de resposta para evitar cliques adicionais
+  document.querySelectorAll(".answer").forEach((item) => {
+    item.removeEventListener("click", nextQuestion);
+  });
 
   if (currentIndex < questions.length - 1) {
     currentIndex++;
-    loadQuestion();
+    setTimeout(loadQuestion, 1000); // Carregue a próxima pergunta após um atraso de 1 segundo
   } else {
     finish();
   }
 }
+
+// function nextQuestion(e) {
+//   if (e.target.getAttribute("data-correct") === "true") {
+//     questionsCorrect++;
+//   }
+
+//   if (currentIndex < questions.length - 1) {
+//     currentIndex++;
+//     loadQuestion();
+//   } else {
+//     finish();
+//   }
+// }
 
 dicaButton.addEventListener("click", () => {
   const answerButtons = document.querySelectorAll(".answer");
