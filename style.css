@@ -62,6 +62,14 @@ button {
   color: white;
 }
 
+.dica {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 20%;
+  background-color: #A78377;
+}
+
 .finish {
   display: none;
   flex-direction: column;
@@ -73,7 +81,12 @@ button {
 }
 
 .answers :hover {
-  background-color: #214cee;
+  background-color: grey;
+  border-radius: 4px;
+}
+
+.dica:hover {
+  background-color: #6E7D79;
   border-radius: 4px;
 }
 
