@@ -1,4 +1,5 @@
 const question = document.querySelector(".question");
+const relogio = document.querySelector("#relogio");
 const answers = document.querySelector(".answers");
 const spnQtd = document.querySelector(".spnQtd");
 const textFinish = document.querySelector(".finish span");
@@ -10,6 +11,19 @@ import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect = 0;
+var HoraAtual = new Date();
+
+// Instancia a função que atualiza o timer
+var timer = () => {
+  var temporizador = (new Date().getMinutes() - HoraAtual.getMinutes()).toString().padStart(2, '0') +
+  ":" +
+  (new Date().getSeconds() - HoraAtual.getSeconds()).toString().padStart(2, '0');
+  relogio.innerHTML = temporizador;
+}
+
+// Inicia a contagem com um intervalo de 1000 milisegundos entre
+// cada atualização do campo
+setInterval(timer, 1000);
 
 btnRestart.onclick = () => {
   content.style.display = "flex";
