@@ -6,18 +6,21 @@ const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
+const btnEnviar = document.querySelector(".botao-enviar");
 
 import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect = 0;
-var HoraAtual = new Date();
+var TempoLimite = new Date();
+
+TempoLimite.setMinutes(TempoLimite.getMinutes() + 3, TempoLimite.getSeconds(), TempoLimite.getMilliseconds());
 
 // Instancia a função que atualiza o timer
 var timer = () => {
-  var temporizador = (new Date().getMinutes() - HoraAtual.getMinutes()).toString().padStart(2, '0') +
+  var temporizador = (TempoLimite.getMinutes() - new Date().getMinutes()).toString().padStart(2, '0') +
   ":" +
-  (new Date().getSeconds() - HoraAtual.getSeconds()).toString().padStart(2, '0');
+  (TempoLimite.getSeconds() - new Date().getSeconds()).toString().padStart(2, '0');
   relogio.innerHTML = temporizador;
 }
 
