@@ -13,21 +13,26 @@ import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect = 0;
-var TempoLimite = new Date();
-
-TempoLimite.setTime(TempoLimite.getTime() + (120*1000))
+var TempoLimite = new Date().getTime() + (5*1000);
+var TempoRestante;
 
 // Instancia a função que atualiza o timer
-var timer = () => {
-  var temporizador = (TempoLimite.getMinutes() - new Date().getMinutes()).toString().padStart(2, '0') +
+var contagem = () => {
+  const agora = new Date().getTime();
+  TempoRestante = TempoLimite - agora;
+  var temporizador = Math.floor((TempoRestante % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0') +
   ":" +
-  (TempoLimite.getSeconds() - new Date().getSeconds()).toString().padStart(2, '0');
-  relogio.innerHTML = temporizador;
+  Math.floor((TempoRestante % (1000 * 60)) / 1000).toString().padStart(2, '0');
+  if (TempoRestante <= 0) {
+    clearInterval(timer); // Pare a contagem regressiva
+  } else {
+    relogio.innerHTML = temporizador;;
+  };
 }
 
 // Inicia a contagem com um intervalo de 1000 milisegundos entre
 // cada atualização do campo
-setInterval(timer, 1000);
+var timer = setInterval(contagem, 1000);
 
 btnRestart.onclick = () => {
   content.style.display = "flex";
