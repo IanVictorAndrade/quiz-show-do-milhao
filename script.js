@@ -62,22 +62,22 @@ function nextQuestion(e) {
   }
 }
 
-dicaButton.addEventListener("click", () => {
-  const answerButtons = document.querySelectorAll(".answer");
-  const wrongAnswers = Array.from(answerButtons).filter(
-      (button) => button.getAttribute("data-correct") !== "true"
-  );
+// dicaButton.addEventListener("click", () => {
+//   const answerButtons = document.querySelectorAll(".answer");
+//   const wrongAnswers = Array.from(answerButtons).filter(
+//       (button) => button.getAttribute("data-correct") !== "true"
+//   );
 
-  if (wrongAnswers.length >= 2) {
-    // Remove as duas primeiras alternativas erradas
-    for (let i = 0; i < 2; i++) {
-      wrongAnswers[i].remove();
-    }
-  } else {
-    // Caso haja menos de duas alternativas erradas, você pode mostrar uma mensagem ou tomar outra ação.
-    console.log("Não há duas alternativas erradas para remover.");
-  }
-});
+//   if (wrongAnswers.length >= 2) {
+//     // Remove as duas primeiras alternativas erradas
+//     for (let i = 0; i < 2; i++) {
+//       wrongAnswers[i].remove();
+//     }
+//   } else {
+//     // Caso haja menos de duas alternativas erradas, você pode mostrar uma mensagem ou tomar outra ação.
+//     console.log("Não há duas alternativas erradas para remover.");
+//   }
+// });
 
 function finish() {
   textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
